@@ -1,0 +1,202 @@
+{% block content %}
+
+<style>
+    .experience-section{
+        padding-bottom: 4rem;
+    }
+    .experience-head-content{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .experience-head-content h1{
+        font-size: 48px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .skills-container {
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+      
+      .card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px 60px;
+        width: 320px;
+        border: 2px solid black;
+      }
+
+      .card:hover{
+        background: linear-gradient(118deg, #ffffff, #00e8ab91);
+
+      }
+      
+      .card h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 10px;
+      }
+      
+      .skill-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      
+      .skill-item {
+        display: flex;
+        align-items: baseline;
+      }
+      
+      .check-icon {
+        font-size: 18px;
+        color: #4caf50;
+        margin-right: 8px;
+      }
+      
+      .skill-info {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .skill-info b {
+        font-size: 16px;
+        color: #333;
+      }
+      
+      .skill-info small {
+        color: #777;
+        font-size: 14px;
+      }
+
+      .zigzag-background-u {
+        position: relative;
+        padding: 4rem 0 !important;
+        background: linear-gradient(118deg, #31303033, #95d0c073);
+        clip-path: polygon(
+            0 0,  /* Top-left corner */
+            100% 5%, /* Top-right corner with a downward slope */
+            100% 95%, /* Bottom-right corner with an upward slope */
+            0 100% /* Bottom-left corner */
+        );
+    }
+
+</style>
+
+<section class="experience-section">
+    <div class="experience-head-content">
+        <p>Explore</p>
+        <h1>Experience</h1>
+    </div>
+    <div class="zigzag-background-u">
+        <div class="skills-container">
+            <div class="card">
+            <h2>Frontend Development</h2>
+            <div class="skill-grid">
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>HTML</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>CSS</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>SASS</b>
+                    <small>Intermediate</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>JavaScript</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>Bootstrap</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>vue js</b>
+                    <small>Intermediate</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        
+            <div class="card">
+            <h2>Backend Development</h2>
+            <div class="skill-grid">
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>PostgreSQL</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>Python</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>Django</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                <span class="check-icon">✔</span>
+                <div class="skill-info">
+                    <b>MySQL</b>
+                    <small>Experienced</small>
+                </div>
+                </div>
+                <div class="skill-item">
+                    <span class="check-icon">✔</span>
+                    <div class="skill-info">
+                    <b>Db Sqlite</b>
+                    <small>Experienced</small>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="check-icon">✔</span>
+                    <div class="skill-info">
+                    <b>Flask</b>
+                    <small>Experienced</small>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

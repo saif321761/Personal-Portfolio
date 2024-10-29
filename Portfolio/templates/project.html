@@ -1,0 +1,117 @@
+{% block content%}
+
+<style>
+    .project-section{
+        padding-bottom: 4rem;
+    }
+
+    .project-section-content{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .project-section-content h1{
+        font-size: 48px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .project-card-container {
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        justify-content: center;
+    }
+    
+    .project-card {
+        background-color: #fff;
+        width: 250px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        padding: 20px;
+        border: 2px solid gray;
+        background: linear-gradient(118deg, #ffffff, #00ecae26);
+    }
+    
+    .project-card-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .project-card-title {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    
+    .project-card-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .project-button {
+        --c: black;
+        
+        box-shadow: 0 0 0 .1em inset black;
+        --_g: linear-gradient(var(--c) 0 0) no-repeat;
+        background: 
+            var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+            var(--_g) calc(200% - var(--_p, 0%)) 0%,
+            var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+            var(--_g) calc(200% - var(--_p, 0%)) 100%;
+        background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
+        outline-offset: .1em;
+        transition: background-size .4s, background-position 0s .4s;
+        
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        color: darkgrey;
+        display: inline-block;
+    }
+    
+    .project-button:hover {
+        --_p: 100%;
+        transition: background-position .4s, background-size 0s;
+        text-decoration: none !important;
+    }
+</style>
+
+<section class="project-section">
+    <div class="project-section-content">
+        <p>Browse My Project</p>
+        <h1>Projects</h1>
+    </div>
+
+    <div class="project-card-container">
+        <div class="project-card">
+            <img src="../static/images/bookyoga.jpeg" alt="Project One" class="project-card-image">
+            <h3 class="project-card-title">BookYoga Life Retreat</h3>
+            <div class="project-card-buttons">
+                <a href="https://shopyogaretreats.com/" class="project-button">Live Demo</a>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="../static/images/bookyoga.jpeg" alt="Project One" class="project-card-image">
+            <h3 class="project-card-title">BookYoga Life Retreat</h3>
+            <div class="project-card-buttons">
+                <a href="https://shopyogaretreats.com/" class="project-button">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="../static/images/bookyoga.jpeg" alt="Project One" class="project-card-image">
+            <h3 class="project-card-title">BookYoga Life Retreat</h3>
+            <div class="project-card-buttons">
+                <a href="https://shopyogaretreats.com/" class="project-button">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock%}

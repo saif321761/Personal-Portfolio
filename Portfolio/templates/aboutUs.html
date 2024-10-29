@@ -1,0 +1,177 @@
+{% block content %}
+
+<style>
+    .about-us-section{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-us-head-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-us-head-content h1{
+        font-size: 48px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .aboutUs-main-content {
+        display: flex;
+        margin-top: 4rem;
+        gap: 3rem;
+        padding: 0px 8rem !important;
+        align-items: flex-start; /* Align content at the top */
+    }
+
+    .about-img {
+        max-width: 500px;
+        max-height: 500px;
+        border: 2px solid lightgrey;
+        border-radius: 20px;
+    }
+
+    .custom-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Stack cards and description vertically */
+        gap: 2rem;
+        max-width: 1000px;
+    }
+
+    .cards__{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .exp-cards {
+        padding: 30px 50px;
+        border: 2px solid black;
+        border-radius: 30px;
+        width: 300px;
+        
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .exp-cards i, 
+    .exp-cards h2, 
+    .exp-cards p {
+        color: black;
+        transition: color 0.3s ease;
+    }
+
+    .exp-cards:hover {
+        background: linear-gradient(118deg, #ffffff36, #d1fff373);
+    }
+
+    .exp-cards:hover i,
+    .exp-cards:hover h2,
+    .exp-cards:hover p {
+        color: green;
+    }
+
+    .card__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .bi-award-fill{
+        font-size: 40px;
+    }
+
+    .bi-mortarboard{
+        font-size: 40px;
+    }
+
+    .cards-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .description-container {
+        text-align: justify;
+        margin-top: 1rem;
+        padding: 0px 80px;
+    }
+
+    .zigzag-background {
+        position: relative;
+        padding: 4rem 0 !important;
+        background: linear-gradient(118deg, #ffffff36, #d1fff373);
+        clip-path: polygon(
+            0 0,  /* Top-left corner */
+            100% 5%, /* Top-right corner with a downward slope */
+            100% 95%, /* Bottom-right corner with an upward slope */
+            0 100% /* Bottom-left corner */
+        );
+    }
+
+
+</style>
+
+<section class="about-us-section">
+    <div class="about-us-head-content">
+        <p>Get To know about me</p>
+        <h1>About Me</h1>
+    </div>
+    <div class="zigzag-background">
+        <div class="aboutUs-main-content">
+            <!-- Image on the left -->
+            <div class="about-img">
+                <img src="../static/images/WhatsApp Image 2024-10-29 at 2.15-Photoroom.jpg" class="custom-img" alt="">
+            </div>
+        
+            <!-- Cards and Description Container on the right -->
+            <div class="content-container">
+                <div class="cards-container">
+                    <div class="cards__">
+                        <div class="exp-cards">
+                            <div class="card__content">
+                                <i class="bi bi-award-fill"></i>
+                                <h2>Experience</h2>
+                                <p>1.5 years</p>
+                                <p>Full Stack Developer</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cards__">
+                        <div class="exp-cards">
+                            <div class="card__content">
+                                <i class="bi bi-mortarboard"></i>
+                                <h2>Education</h2>
+                                <p>Bs Computer Science</p>
+                                <p>2020 to 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Description Below the Cards -->
+                <div class="description-container">
+                    <p>I am a Full Stack Developer with 1.5 years of experience, specializing in building scalable, high-performance web applications. I excel in Python and Django for backend development and use React.js and Vue.js to craft dynamic, user-friendly interfaces.
+
+                        With expertise in HTML, CSS, Bootstrap, and proficiency in databases such as MySQL, PostgreSQL, SQL Server, and SQLite, I ensure seamless integration between the frontend and backend. Skilled in Git for version control, I thrive in collaborative environments and am committed to writing clean, maintainable code. I continuously seek new challenges to enhance my skills and deliver innovative solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+{% endblock %} 
